@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parte 2</title>
+    <style>
+        *{
+            font-size: 105%;
+        }
+        body{
+            background-color: #131313;           
+            color:aliceblue;
+            margin-inline: 100px;
+            margin-left: 100px;
+        }
+        header{
+            background-color: darkslategray;
+            text-align: center; 
+        }
+        #title{
+            font-size: xx-large;
+        }
+        h2{
+            font-size: x-large;
+        }
+        section{
+            background-color: darkslategray;
+            border-left: solid 50px darkslategray;
+            margin-top: 15px;
+        }
+        div{
+            background-color: #212020;
+            width: 400px;
+        } 
+        .exemplo{
+            border: solid #212020 20px;
+        }
+        .exemplo::first-line{
+            color:orange;
+        }
+        .exemplo::after{
+            color:orange;
+            content:"}";
+        }
+        q{
+            quotes: none;
+            color: sandybrown;
+        }
+        span[data="underline"]{
+            text-decoration: underline;
+        }
+        span[data="blue"]{
+            color: rgb(142, 254, 217);
+        }
+        span[data="red"]{
+            color:rgb(236, 133, 96);
+        }
+        h2:hover{
+            color:peru;
+        }
+        body article{
+            margin-bottom:50px;
+        }
+        header>h1:hover{
+            color:peru;
+        }
+        p+p{
+            font-size: small;
+            font-style: italic;
+            margin-left: 10px;
+        }
+        h2~div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Seletores</h1><h1>HTML</h1>
+        <p>Abordando o conceito e função dos seletores.</p>
+    </header> 
+    <section>
+        <br>
+
+        <article>
+            <h2>Seletor Universal</h2>
+            <p>Utilizando "*" define-se todo elemento da página.<br> Todas as tags apresentadas como exemplo são dessa própria página.</p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">*</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<span data="blue">font-size</span>: <span data="red">105%</span>;
+                    <br>
+                </p> 
+                <p>Altera o tamanho da fonte de toda a página.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Seletor por Tag/elemento</h2>
+            <p>Define-se toda a tag para a estilização.</p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">body</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">background-color</span>: <span data="red">#131313</span>
+                    <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">color</span>: <span data="red">aliceblue</span>;
+                    <br>
+                </p>
+                <p>Toda a tag body apresenta o background cinza e cor de letra aliceblue.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Seletores do tipo class e id</h2>
+            <p>Do tipo class inicia-se por um ".".</p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">.exemplo</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">border</span>: <span data="red">solid #212020 20px</span>;
+                    <br>
+                </p>
+                <p>As tags com classe "exemplo" apresentam borda.</p>
+            </div>
+            <p>Do tipo id, apresenta "#" na frente. </p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">#title</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">font-size</span>: <span data="red">xx-large</span>;
+                    <br>
+                </p>
+                <p>A tag h1 com id "title" apresenta fonte maior.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Seletor de atributos</h2>
+            <p>Seleciona elementos a partir de atributos adicionados na forma data="exemplo". No CSS coloca-se "p[data="exemplo"]" por exemplo.
+            <br>
+            Utilizando códigos após a palavra data, obtém-se seleções especiais:
+            <br>
+            <span data="underline">data^="exemplo" (^ ou /) </span>- todos que o atributo começa com "exemplo" (exemplo-01, exemplo-02).
+            <br>
+            <span data="underline">data$="exemplo" </span>- todos que o atributo termina com "exemplo" (aa-exemplo, ab-exemplo).
+            <br>
+            <span data="underline">data*="exemplo" </span>- todos que o atributo tem a palavra "exemplo" em qualquer lugar(ax-exemplo-41, thg-exemplo-02).
+            </p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">span[data="underline"]</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">text-decoration</span>: <span data="red">underline</span>;
+                    <br>
+                </p>
+                <p>Os quotes com a data="underline" estão sublinhados.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Pseudo-classes</h2>
+            <p>É uma função especial para um seletor.
+            <br>
+            Exemplos:
+            <br>
+            <span data="underline">seletor:hover</span> - adiciona estilização ao passar o cursor por cima do seletor.
+            <br>
+            <span data="underline">seletor:link</span> - adiciona estilização a links não visitados.
+            <br>
+            <span data="underline">seletor:visited</span> - adiciona estilização a links já visitados.
+            <br>
+            <span data="underline">seletor:active</span> - adiciona estilização ao clicar no link e segurar.
+            </p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">h2:hover</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">color</span>: <span data="red">peru</span>;
+                    <br>
+                </p>
+                <p>As tags h2 mudam de cor ao passar o cursor.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Pseudo-elementos</h2>
+            <p>É uma função especial para estilizar uma parte específica do seletor.
+            <br>
+            Exemplos:
+            <br>
+            <span data="underline">seletor::first-line</span> - adiciona estilização na primeira linha.
+            <br>
+            <span data="underline">seletor::after</span> - adiciona estilização ao final.
+            <br>
+            <span data="underline">seletor::before</span> - adiciona estilização no início.
+            </p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">.exemplo::first-line</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">color</span>: <span data="red">orange</span>;
+                    <br>
+                </p>
+                <p>Muda a cor da primeira linha de toda tag com a classe="exemplo" para laranja.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Combinators</h2>
+            <p>Explicam a relação entre dois seletores.
+            <br>
+            São quatro tipos:
+            <br>
+
+            <span data="underline">"Espaço"</span> - seletor descendente. Seleciona todos os elementos do segundo seletor que sejam descendentes do primeiro. Exemplo: todas as section dentro de um body ou todos os p dentro de um div.
+            <div>
+                <p class="exemplo">
+                    <q class="first">body article</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">margin-bottom</span>: <span data="red">50px</span>;
+                    <br>
+                </p>
+                <p>Adiciona uma margem de 50 px embaixo de todos os article dentro do body.</p>
+            </div>
+            <br>
+
+            <span data="underline">">"</span> - seletor filho. Seleciona apenas os filhos ou descendentes imediatos com aquela tag. Exemplo: os p que estejam imediatamente dentro de um div.
+            <div>
+                <p class="exemplo">
+                    <q class="first">header>h1:hover</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">color</span>: <span data="red">peru</span>;
+                    <br>
+                </p>
+                <p>Muda a cor das tag "h1" depois de todo header.</p>
+            </div>
+
+            <br>
+            <span data="underline">"+"</span> - seletor irmão adjacente. Estiliza somente o segundo termo imediatamente após o primeiro. Exemplo: o primeiro p após todo div ou o primeiro h2 após todo h1.
+            <div>
+                <p class="exemplo">
+                    <q class="first">p + p</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">font-size</span>: <span data="red">small</span>;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">font-style</span>: <span data="red">italic</span>;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">margin-left</span>: <span data="red">10px</span>;
+                    <br>
+                </p>
+                <p>Muda a fonte de todo p adjacente a outro p e adiciona margem à esquerda.</p>
+            </div>
+
+            <br>
+            <span data="underline">"~"</span> - seletor irmão em geral. Todos os elementos do segundo termo que sejam irmãos, em seguida, do primeiro. Exemplo: todos os h2 após o h1 (dentro do mesmo pai).
+            </p>
+            <div>
+                <p class="exemplo">
+                    <q class="first">h2~div</q>{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data="blue">margin-bottom</span>: <span data="red">10px</span>;
+                    <br>
+                </p>
+                <p>Adiciona margem de 10px a todos os div irmão em seguida dos h2.</p>
+            </div>
+            <br>
+        </article>
+
+    </section>   
+</body>
+</html>
