@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Preferido</title>
+    <link rel="icon" type="image/png" href="https://www.serebii.net/itemdex/sprites/pgl/pokeball.png"/>
+    <!-- Página para mostrar a utilização de caixas e seus atributos. -->
+   <style>
+       body{
+           background-color: #2f3e46;
+       }
+       header{
+           background-color: #84a98c;
+           height: auto;
+           text-align: center;
+           width: auto;
+           padding: 2.5%;
+           margin-left: 5%;
+           margin-right: 5%;
+           margin-top: 5%;
+           margin-bottom: 2%;
+       }
+       main{
+           background-color: #84a98c;
+           height: auto;
+           text-align: center;
+           width: auto; 
+           padding: 2.5%;
+           margin-left: 5%;
+           margin-right: 5%;
+           border-top: #84a98c 50px solid;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+       }
+       .pokemon{
+           background-color: #6b7e7a;
+           border: #2f3e46 solid 1px;
+           border-radius: 0%;
+           display: flex;
+           width:250px;
+           height:120px;
+           margin-bottom: 5%;
+       }
+       .descricao{
+           background-color: #cad2c5;
+           margin: 5%;
+           border: #2f3e46 solid 1px;
+       }
+       .sect{
+           margin-left: 10%;
+       }
+       #vaporeon{
+           overflow: visible;
+       }
+       #shiinotic{
+           overflow: hidden;
+       }
+       #zubat{
+           margin-left: 10%;
+           overflow: scroll;
+       }
+       #wooper{
+           margin-left: 10%;
+           overflow: auto;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista dos pokemon preferidos</h1>
+        <span><img src="https://www.serebii.net/itemdex/sprites/pgl/pokeball.png"></span>
+        <span><img src="https://www.serebii.net/itemdex/sprites/pgl/netball.png"></span>
+        <span><img src="https://www.serebii.net/itemdex/sprites/pgl/premierball.png"></span>
+        <span><img src="https://www.serebii.net/itemdex/sprites/pgl/masterball.png"></span>
+    </header>
+    <main>
+        <section class="pokemon">
+            <span class="sect">
+                <p>Vaporeon</p>
+                <img src="https://www.serebii.net/emerald/pokemon/134.png" alt="Pokemon Vaporeon">
+            </span>
+            <div class="descricao" id="vaporeon">Vaporeon underwent a spontaneous mutation and grew fins and gills that allow them to live underwater. They have the ability to freely control water.</div>
+        </section>
+
+        <section class="pokemon">
+            <span class="sect">
+                <p>Shiinotic</p>
+                <img src="https://www.serebii.net/pokemon/art/756.png" alt="Pokemon Shiinotic" height="60px">
+            </span>
+            <div class="descricao" id="shiinotic">Its flickering spores lure in prey and put them to sleep. Once this Pokémon has its prey snoozing, it drains their vitality with its fingertips.</div>
+        </section>
+
+        <section class="pokemon">
+            <span class="sect">
+                <p>Zubat</p>
+                <img src="https://www.serebii.net/emerald/pokemon/041.png" alt="Pokemon Zubat">
+            </span>
+            <div class="descricao" id="zubat">While living in pitch-black caverns, their eyes gradually grew shut and deprived them of vision. They use ultrasonic waves to detect obstacles.</div>
+        </section>
+
+        <section class="pokemon">
+            <span class="sect">
+                <p>Wooper</p>
+                <img src="https://www.serebii.net/emerald/pokemon/194.png" alt="Pokemon Wooper">
+            </span>
+            <div class="descricao" id="wooper">WOOPER usually live in water but come out onto land seeking food occasionally. On land, they coat their bodies with a gooey, toxic film.</div>
+        </section>
+    </main>
+</body>
+</html>
