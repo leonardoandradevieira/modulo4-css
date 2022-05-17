@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 6</title>
+    <style>
+        html{
+            background-color: rgb(2, 46, 2);
+            color: rgb(250, 189, 76);
+        }
+        section{
+            margin: 4vw;
+        }
+        header{
+            padding: 2vw;
+            border-bottom: solid black 1px;
+        }
+        #ul{
+            display: flex;
+        }
+        #ul > li{
+            margin-right: 3vw;
+            border-style: ridge;
+            border-left: none;
+            border-top: none;
+            padding: 1vw;
+        }
+        #links{
+            background-color: rgb(32, 32, 32);
+            border-style: dashed;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5vw;
+        }
+        a{
+            font-size: 2vw;
+            text-decoration: none;
+        }
+        a:link{
+            color: black;
+            border: outset;
+            border-radius: 20%;
+            background-color: silver;
+            border-color: rgb(143, 141, 141);
+            padding: 0.5vw;
+            border
+        }
+        #youtube:visited{
+            color: #681468;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #youtube:hover{
+            color: #fd8afd;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #fd8afd 0px 5px 70px 4px;
+        }
+        #youtube:focus{
+            color: #fd8afd;
+            outline: dotted 4px rgb(192, 95, 111);
+        }
+        #facebook:visited{
+            color: #57360e;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #facebook:hover{
+            color: #ffba65;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #ffba65 0px 5px 70px 4px;
+        }
+        #facebook:focus{
+            color: #ffba65;
+            outline: dotted 4px orange;
+        }
+        #instagram:visited{
+            color: #595c0e;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #instagram:hover{
+            color: #f6fa87;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #f6fa87 0px 5px 70px 4px;
+        }
+        #instagram:focus{
+            color: #f6fa87;
+            outline: dotted 4px yellow;
+        }
+        #twitter:visited{
+            color: #15490b;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #twitter:hover{
+            color: #9ef88c;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #9ef88c 0px 5px 70px 4px;
+        }
+        #twitter:focus{
+            color: #9ef88c;
+            outline: dotted 4px greenyellow;
+        }
+        #github:visited{
+            color: #0a393d;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #github:hover{
+            color: #7ff1fc;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #7ff1fc 0px 5px 70px 4px;
+        }
+        #github:focus{
+            color: #7ff1fc;
+            outline: dotted 4px rgb(99, 185, 238);
+        }
+        #discord:visited{
+            color: #0b234b;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #discord:hover{
+            color: #75aaff;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #75aaff 0px 5px 70px 4px;
+        }
+        #discord:focus{
+            color: #75aaff;
+            outline: dotted 4px rgb(70, 70, 201);
+        }
+        #linkedin:visited{
+            color: #32105a;
+            border: inset;
+            border-color: rgb(143, 141, 141);
+        }
+        #linkedin:hover{
+            color: #b16dfd;
+            border: inset;
+            border-color: rgb(182, 181, 181);
+            box-shadow: #b16dfd 0px 5px 70px 4px;
+        }
+        #linkedin:focus{
+            color: #b16dfd;
+            outline: dotted 4px rgb(153, 46, 153);
+        }
+        a:active{
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista de listas</h1>
+        <p>Aprendendo a estilizar listas</p>
+    </header>
+    <main>
+        <section>
+            Listas não-ordenadas, utiliza-se a propriedade list-style.
+            <ul>
+                <li style="list-style: disc;">list-style: disc;</li>
+                <li style="list-style: circle;">list-style: circle;</li>
+                <li style="list-style: square;">list-style: square;</li>
+                <li style="list-style: none;">list-style: none;</li>
+            </ul>
+        </section>
+        <section>
+            Listas ordenadas
+            <ul id="ul">
+            <li>
+            Decimal:
+                <ol style="list-style: decimal;">
+                    <li>list-style: decimal;</li>
+                    <li>list-style: lower-roman;</li>
+                    <li>list-style: upper-roman;</li>
+                    <li>list-style: lower-latin;</li>
+                    <li>list-style: upper-latin;</li>
+                </ol>
+            </li>
+            <li>
+            Lower-roman:
+                <ol style="list-style: lower-roman;">
+                    <li>list-style: decimal;</li>
+                    <li>list-style: lower-roman;</li>
+                    <li>list-style: upper-roman;</li>
+                    <li>list-style: lower-latin;</li>
+                    <li>list-style: upper-latin;</li>
+                </ol>
+            </li>
+            <li>
+            Upper-roman:
+                <ol style="list-style: upper-roman;">
+                    <li>list-style: decimal;</li>
+                    <li>list-style: lower-roman;</li>
+                    <li>list-style: upper-roman;</li>
+                    <li>list-style: lower-latin;</li>
+                    <li>list-style: upper-latin;</li>
+                </ol>
+            </li>
+            <li>
+            Lower-latin:
+                <ol style="list-style: lower-latin;">
+                    <li>list-style: decimal;</li>
+                    <li>list-style: lower-roman;</li>
+                    <li>list-style: upper-roman;</li>
+                    <li>list-style: lower-latin;</li>
+                    <li>list-style: upper-latin;</li>
+                </ol>
+            </li>
+            <li>
+            Upper-latin:
+                <ol style="list-style: upper-latin;">
+                    <li>list-style: decimal;</li>
+                    <li>list-style: lower-roman;</li>
+                    <li>list-style: upper-roman;</li>
+                    <li>list-style: lower-latin;</li>
+                    <li>list-style: upper-latin;</li>
+                </ol>
+            </li>
+            </ul>
+        </section>
+        <p style="color: white; padding: 2vw; font-size: 2vw;">Customização de links:</p>
+        <section id="links">
+            <a href="https://www.youtube.com" id="youtube">YouTube</a>
+            <a href="https://www.facebook.com" id="facebook">FaceBook</a>
+            <a href="https://www.instagram.com" id="instagram">Instagram</a>
+            <a href="https://www.twitter.com" id="twitter">Twitter</a>
+            <a href="https://www.github.com" id="github">Github</a>
+            <a href="https://www.discord.com" id="discord">Discord</a>
+            <a href="https://www.linkedin.com" id="linkedin">Linkedin</a>
+        </section>
+    </main>
+</body>
+</html>
