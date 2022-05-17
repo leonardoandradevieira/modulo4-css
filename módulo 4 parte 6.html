@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parte 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'kaushan_scriptregular';
+            src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+                url('kaushanscript-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         html{
             background-color: rgb(2, 46, 2);
             color: rgb(250, 189, 76);
@@ -16,6 +26,10 @@
         header{
             padding: 2vw;
             border-bottom: solid black 1px;
+            font-family: 'Germania One', cursive;
+        }
+        .lista{
+            font-family: 'Germania One', cursive;
         }
         #ul{
             display: flex;
@@ -33,6 +47,7 @@
             display: flex;
             justify-content: space-evenly;
             padding: 5vw;
+            font-family: 'kaushan_scriptregular';
         }
         a{
             font-size: 2vw;
@@ -162,7 +177,7 @@
         <p>Aprendendo a estilizar listas</p>
     </header>
     <main>
-        <section>
+        <section class="lista">
             Listas não-ordenadas, utiliza-se a propriedade list-style.
             <ul>
                 <li style="list-style: disc;">list-style: disc;</li>
@@ -171,7 +186,7 @@
                 <li style="list-style: none;">list-style: none;</li>
             </ul>
         </section>
-        <section>
+        <section class="lista">
             Listas ordenadas
             <ul id="ul">
             <li>
