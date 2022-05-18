@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 7</title>
+    <style>
+        html{
+            margin: 5vw;
+            background-color: rgb(48, 47, 47);
+        }
+        body{
+            background-color: lightgray;
+            padding: 2vw;
+            border: solid black 1px;
+        }
+        header{
+            padding-bottom: 3vw;
+        }
+        .cores{
+            display: flex;
+            margin: 1vw;
+        }
+        #hex1{
+            background-color: #4D5CF8;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex2{
+            background-color: #4378D9;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex3{
+            background-color: #56B5F0;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex4{
+            background-color: #43C7D9;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex5{
+            background-color: #4DF8DE;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex6{
+            background-color: #577D1680;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex7{
+            background-color: #CDFD7980;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex8{
+            background-color: #B1FC2D80;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex9{
+            background-color: #657D3C80;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hex10{
+            background-color: #8DC92480;
+            border-radius: 50%;
+            height: 7vw;
+            width: 7vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #rgb1{
+            background-color: rgb(216,138,255);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #rgb2{
+            background-color: rgb(113,255,184);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #rgb3{
+            background-color: rgb(255,198,87);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #rgba1{
+            background-color: rgba(255,104,203,0.8);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #rgba2{
+            background-color: rgba(120,255,105,0.8);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl1{
+            background-color: hsl(57,68%,50%);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl2{
+            background-color: hsl(295,73%,50%);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl3{
+            background-color: hsl(132,78%,50%);
+            border-radius: 50%;
+            height: 10vw;
+            width: 10vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl4{
+            background-color: hsla(46,83%,50%,0.9);
+            border-radius: 50%;
+            height: 11vw;
+            width: 11vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl5{
+            background-color: hsla(353,93%,50%,0.9);
+            border-radius: 50%;
+            height: 11vw;
+            width: 11vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl6{
+            background-color: hsla(133,83%,50%,0.9);
+            border-radius: 50%;
+            height: 11vw;
+            width: 11vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #hsl7{
+            background-color: hsla(231,98%,50%,0.9);
+            border-radius: 50%;
+            height: 11vw;
+            width: 11vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #p1{
+            background-color: red;
+            border-radius: 50%;
+            height: 8vw;
+            width: 8vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #p2{
+            background-color: yellow;
+            border-radius: 50%;
+            height: 8vw;
+            width: 8vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        #p3{
+            background-color: blue;
+            border-radius: 50%;
+            height: 8vw;
+            width: 8vw;
+            margin: 0;
+            text-align: center;
+            margin: 1vw;
+        }
+        div p{
+            color: white;
+            font-weight: bold;
+            font-size: 1vw;
+            padding-top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cores</h1>
+        <h1>Esquemas de cores</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Análogas</h2>
+            <p>Cores próximas umas das outras no círculo cromático. Apesar de muito harmoniosa, deve-se ter cuidado com a falta de contraste para pessoas daltônicas.</p>
+            <article class="cores">
+                <div id="hex1"><p>#4D5CF8</p></div>
+                <div id="hex2"><p>#4378D9</p></div>
+                <div id="hex3"><p>#56B5F0</p></div>
+                <div id="hex4"><p>#43C7D9</p></div>
+                <div id="hex5"><p>#4DF8DE</p></div>
+            </article>
+        </section>
+        <section>
+            <h2>Monocromático</h2>
+            <p>Representa uma só cor com tons diferentes.</p>
+            <article class="cores">
+                <div id="hex6"><p>#577D1680</p></div>
+                <div id="hex7"><p>#CDFD7980</p></div>
+                <div id="hex8"><p>#B1FC2D80</p></div>
+                <div id="hex9"><p>#657D3C80</p></div>
+                <div id="hex10"><p>#8DC92480</p></div>
+            </article>
+        </section>
+        <section>
+            <h2>Tríade</h2>
+            <p>Três cores do círculo cromático com a mesma distância entre elas, formando um triângulo.</p>
+            <article class="cores">
+                <div id="rgb1"><p>rgb(216,138,255)</p></div>
+                <div id="rgb2"><p>rgb(113,255,184)</p></div>
+                <div id="rgb3"><p>rgb(255,198,87)</p></div>
+            </article>
+        </section>
+        <section>
+            <h2>Complementar</h2>
+            <p>Cores opostas no círculo cromático, apresentam alto contraste.</p>
+            <article class="cores">
+                <div id="rgba1"><p>rgba(255,104,203,0.8)</p></div>
+                <div id="rgba2"><p>rgba(120,255,105,0.8)</p></div>
+            </article>
+        </section>
+        <section>
+            <h2>Dividir complementar</h2>
+            <p>Uma cor é combinada com duas adjacentes da sua complementar.</p>
+            <article class="cores">
+                <div id="hsl1"><p>hsl(57,68%,100%)</p></div>
+                <div id="hsl2"><p>hsl(295,73%,100%)</p></div>
+                <div id="hsl3"><p>hsl(132,78%,100%)</p></div>
+            </article>
+        </section>
+        <section>
+            <h2>Quadrática</h2>
+            <p>Quatro cores com distância iguais formando um quadrado.</p>
+            <article class="cores">
+                <div id="hsl4"><p>hsla(46,83%,50%,0.9)</p></div>
+                <div id="hsl5"><p>hsla(353,93%,50%,0.9)</p></div>
+                <div id="hsl6"><p>hsla(133,83%,50%,0.9)</p></div>
+                <div id="hsl7"><p>hsla(231,98%,50%,0.9)</p></div>
+            </article>
+        </section>
+        <section>
+            <h2>Primárias</h2>
+            <p>Cores que misturadas, geram todas as outras.</p>
+            <article class="cores">
+                <div id="p1"><p>red</p></div>
+                <div id="p2"><p>yellow</p></div>
+                <div id="p3"><p>blue</p></div>
+            </article>
+        </section>
+        <section></section>
+    </main>
+</body>
+</html>
