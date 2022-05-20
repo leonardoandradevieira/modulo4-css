@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 8</title>
+    <style>
+        html{
+            background-color: darkslategrey;
+        }
+        body{
+            background-color: silver;
+            width: fit-content;
+            margin: 3vw;
+            border: 2px black solid;
+        }
+        header{
+            background-color: rgb(73, 180, 116);
+            font-weight: bold;
+            padding: 1vw 2vw 1vw;
+            border-bottom: 1px solid black;
+        }
+        h3{
+            padding: 2vw;
+        }
+        #s1{
+            background-image: url(https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a7/Underground_background_2.png/revision/latest/scale-to-width-down/160?cb=20200821140126);
+            background-size: auto;
+            width: 15vw;
+            height: 11vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #s2{
+            background-image: url(https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f9/Jungle_background_2.png/revision/latest/scale-to-width-down/1000?cb=20200816172931);
+            background-size: 70%;
+            background-position-y: -2vw;
+            width: 30vw;
+            height: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #s3{
+            background-image: url(https://static.wikia.nocookie.net/terraria_gamepedia/images/1/11/Desert_background_1.png/revision/latest?cb=20200814170610&format=original);
+            background-size: 100%;
+            background-position-y: -4vw;
+            width: 30vw;
+            height: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #s4{
+            background-image: url(https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7a/Ocean_background_5.png/revision/latest/scale-to-width-down/1000?cb=20200814145458);
+            background-size: 70%;
+            background-position-y: bottom;
+            width: 30vw;
+            height: 15vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #s5{
+            background-image: url(https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c1/Jungle_background_6.png/revision/latest?cb=20200816173010&format=original);
+            background-size: 120%;
+            background-position-y: bottom;
+            width: 30vw;
+            height: 15vw;
+            display: flex;
+            justify-content: space-around;
+        }
+        #pkmn1{
+            align-self: flex-start;
+        }
+        #pkmn2{
+            align-self: flex-end;
+        }
+        #pkmn3{
+            align-self: center;
+        }
+        #pkmn4{
+            align-self: baseline;
+        }
+        #pkmn5{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplos de elementos flex organizando pokemons.</h1>
+    </header>
+    <main>
+        <h3>Embaixo da terra</h3>
+        <section id="s1">
+            <img src="https://www.serebii.net/pokearth/sprites/dp/051.png">
+        </section>
+        <h3>Mar</h3>
+        <section id="s2">
+            <div>
+                <img src="https://www.serebii.net/pokearth/sprites/dp/187.png">
+                <img src="https://www.serebii.net/pokearth/sprites/dp/284.png">
+            </div>
+            <div>
+                <img style="height: 8vw;" src="https://www.serebii.net/Shiny/HGSS/123-f.png">
+                <img style="height: 6vw;" src="https://www.serebii.net/pokearth/sprites/hgss/162.png">
+            </div>
+        </section>
+        <h3>Deserto</h3>
+        <section id="s3">
+            <img src="https://www.serebii.net/pokearth/sprites/dp/027.png">
+            <img style="height: 8vw;" src="https://www.serebii.net/pokearth/sprites/hgss/095.png">
+            <img src="https://www.serebii.net/platinum/pokemon/449-m.png">
+        </section>
+        <h3>Floresta</h3>
+        <section id="s4">
+            <img style="height: 3vw;" src="https://www.serebii.net/pokearth/sprites/dp/086.png">
+            <img style="height: 4vw;" src="https://www.serebii.net/pokearth/sprites/dp/171.png">
+            <img style="height: 6vw;" src="https://www.serebii.net/pokearth/sprites/dp/319.png">
+            <img style="height: 3vw;" src="https://www.serebii.net/diamondpearl/pokemon/456-f.png">
+        </section>
+        <h3>Pântano</h3>
+        <section id="s5">
+            <img id="pkmn1" style="height: 4vw;" src="https://www.serebii.net/pokearth/sprites/dp/455.png">
+            <img id="pkmn2" style="height: 3vw;" src="https://www.serebii.net/platinum/pokemon/453-m.png">
+            <img id="pkmn3" style="height: 3vw;" src="https://www.serebii.net/heartgoldsoulsilver/pokemon/194-f.png">
+            <img id="pkmn4" style="height: 5vw;" src="https://www.serebii.net/pokearth/sprites/pt/340.png">
+            <img id="pkmn5" style="height: 3vw;" src="https://www.serebii.net/pokearth/sprites/pt/451.png">
+        </section>
+    </main>
+</body>
+</html>
