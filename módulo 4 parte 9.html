@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 9</title>
+    <style>
+        html{
+            background: #f0ead2;
+        }
+        body{
+            background-color: #dde5b6;
+            border: 1px solid black;
+            margin: 4vw;
+            padding: 2vw;
+        }
+        h3{
+            padding-top: 5vw;
+        }
+        ul{
+            border: 1px solid black;
+            list-style-type: none;
+            width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            align-items: stretch;
+        }
+        .titulo{
+            position: relative;
+            top: 1.8em;
+            margin-left: 1em;
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+            width: fit-content;
+            background-color: #dde5b6;
+        }
+        li{
+            flex: 1;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        .dados{
+            background-color: red;
+            font-weight: bold;
+        }
+        .formacao{
+            background-color: orange;
+            font-weight: bold;
+        }
+        .exp{
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .ling{
+            background-color: rgb(71, 255, 47);
+            font-weight: bold;
+        }
+        .apt{
+            background-color: rgb(135, 250, 225);
+            font-weight: bold;
+        }
+        .int{
+            background-color: blue;
+            font-weight: bold;
+        }
+        .contato{
+            background-color: purple;
+            font-weight: bold;
+        }
+        #primeiro{
+            height: 300px;
+            border: none;
+        }
+        #layout1{
+            flex-wrap: nowrap;
+            height: 100px;
+            width: fit-content;
+        }
+        #layout2{
+            width: 130px;
+            height: 500px;
+        }
+        #layout3{
+            height: 400px;
+        }
+        #dadoscontato{
+            background: linear-gradient(red, blue);
+            float: right;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #layout4{
+            flex-wrap: nowrap;
+            height: 400px;
+        }
+        #contato4{
+            align-self: end;
+        }
+        #layout4 div{
+            list-style-type: none;
+            width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            align-items: stretch;
+        }
+        #layout5{
+            flex-direction: row;
+            width: fit-content;
+        }
+        #horizontal51{
+            display: flex;
+            flex-wrap: nowrap;
+            height: 50px;
+            width: 100%;
+        }
+        #horizontal52{
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            height: 50px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Planejando o template do currículo</h1>
+        <p>Utilizando wrap em elementos flexible box para planejar o template do desafio currículo.</p>
+    </header>
+    <main>
+        <section>
+            <h3>Principais informações:</h3>
+            <ul id="primeiro">
+                <li class="dados">Dados pessoais</li>
+                <li class="formacao">Formação</li>
+                <li class="exp">Experiências</li>
+                <li class="ling">Linguas e linguagens</li>
+                <li class="apt">Aptidões</li>
+                <li class="int">Interesses</li>
+                <li class="contato">Contato</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Layout 1: horizontal</h3>
+            <p class="titulo">Página</p>
+            <ul id="layout1">
+                <li class="dados">Dados pessoais</li>
+                <li class="formacao">Formação</li>
+                <li class="exp">Experiências</li>
+                <li class="ling">Linguas e linguagens</li>
+                <li class="apt">Aptidões</li>
+                <li class="int">Interesses</li>
+                <li class="contato">Contato</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Layout 2: vertical</h3>
+            <p class="titulo">Página</p>
+            <ul id="layout2">
+                <li class="dados">Dados pessoais</li>
+                <li class="formacao">Formação</li>
+                <li class="exp">Experiências</li>
+                <li class="ling">Linguas e linguagens</li>
+                <li class="apt">Aptidões</li>
+                <li class="int">Interesses</li>
+                <li class="contato">Contato</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Layout 3: personalizado</h3>
+            <p class="titulo">Página</p>
+            <ul id="layout3">
+                <li class="dados" style="order: 1;">Dados pessoais</li>
+                <li class="formacao" style="order: 3;">Formação</li>
+                <li class="exp" style="order: 4;">Experiências</li>
+                <li class="ling" style="order: 6; flex-basis: 100%;">Linguas e linguagens</li>
+                <li class="apt" style="order: 5; flex-basis: 100%;">Aptidões</li>
+                <li class="int" style="order: 2;">Interesses</li>
+                <li class="contato" style="order: 7;">Contato</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Layout 4: personalizado 2</h3>
+            <p class="titulo">Página</p>
+            <ul id="layout4">
+                <div>
+                <li class="formacao"  style="order: 0;  flex-basis: 100%;">Formação</li>
+                <li class="exp"  style="order: 0;  flex-basis: 100%;">Experiências</li>
+                <li class="ling"  style="order: 0;  flex-basis: 100%;">Linguas e linguagens</li>
+                <li class="apt"  style="order: 0;  flex-basis: 100%;">Aptidões</li>
+                <li class="int"  style="order: 0;  flex-basis: 100%;">Interesses</li>
+                </div>
+                <aside id="dadoscontato">
+                <li style="order: 0;">(FIXO) Dados pessoais</li>
+                <li id="contato4" style="order: 0;">Contato</li>
+                </aside>
+            </ul>
+        </section>
+        <section>
+            <h3>Layout 5: personalizado 3</h3>
+            <p class="titulo">Página</p>
+            <ul id="layout5">
+                <div id="horizontal51">
+                <li class="contato" style="flex-basis: auto;">(FIXO)</li>
+                <li class="contato" style="flex-basis: 90%;">Contato</li>
+                </div>
+                <div id="horizontal52">
+                <li class="dados">Dados pessoais</li>
+                <li class="formacao">Formação</li>
+                <li class="exp">Experiências</li>
+                <li class="ling">Linguas e linguagens</li>
+                <li class="apt">Aptidões</li>
+                <li class="int">Interesses</li>
+                </div>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
