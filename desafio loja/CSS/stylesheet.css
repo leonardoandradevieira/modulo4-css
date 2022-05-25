@@ -1,0 +1,651 @@
+/* GERAL--------------------- */
+body{
+    font-family: 'Objectivity-Regular';
+    background-color: #F9F9F9;
+    color: #1E2B11;
+}
+h1, h2, h3{
+    font-family: 'Syne-Bold';
+    color: #3D5A23;
+}
+h2{
+    font-size: 40px;
+    line-height: 1.4em;
+}
+h3{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1em;
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+li{
+    margin-left: 20px;
+    line-height: 25px;
+    max-width: 700px;
+}
+p{
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+main{
+    margin-top: 60px;
+    margin-left: 190px;
+    margin-bottom: 70px;
+}
+
+/* HEADER E FOOTER----------- */
+header{
+    color: #3F5D27;
+    background-color: #D8EBC7;
+    border-bottom: hsl(93, 41%, 26%) 1px solid;
+    font-family: 'Objectivity-Regular';
+    font-weight: bolder;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+footer{
+    color: #3F5D27;
+    background-color: #E2E2F2;
+    border-top: #3F5D27 1px solid;
+    font-family: 'Objectivity-Regular';
+    text-align: center;
+    font-size: small;
+    padding: 16px;
+}
+footer a{
+    color: currentColor;
+    text-decoration: underline;
+}
+
+/* UPPERNAV--------------------- */
+#uppernav{
+    padding: 24px 100px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: #3F5D27 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#uppernav h1{
+    font-size: 25px;
+}
+#uppernav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#uppernav ul:first-child{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#home{
+    list-style-type: circle;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#profile{
+    width: 20px;
+}
+#uppernavbutton{
+    color: #1E2B11;
+    text-decoration: none;
+    background-color: #F9F9F9;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    padding: 10px;
+    font-size: 15px;
+}
+#uppernavbutton:hover{
+    color: #3D5A23;
+}
+a.ahover:hover{
+    color: #3D5A23;
+}
+#cart{
+    width: 25px;
+    padding-left: 0px;
+}
+#cartcounter{
+    font-size: 12px;
+    color: #3D5A23;
+    position: relative;
+    top: -5px;
+    left: -20px;
+}
+#menuicon{
+    display: none;
+}
+
+/* DOWNERNAV--------------------- */
+#downernav{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    border-top: #3F5D27 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-evenly;
+}
+.downerul li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#mailto{
+    color: currentColor;
+    text-decoration: none;
+}
+#socialmedia{
+    text-decoration: none;
+    display: flex;
+}
+#socialmedia img{
+    width: 20px;
+    padding: 8px;
+}
+
+/* CHAT--------------------- */
+aside{
+    background-color: #FCC077;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    margin: 15px;
+    width: 25px;
+}
+#chat{
+    width: 25px;
+    position: relative;
+    top: 3px;
+}
+
+/* MAIN---------------------- */
+.borderdownp{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #1E2B11;
+    max-width: 700px;
+}
+.disclist{
+    list-style-type: disc;
+}
+.numberlist{
+    list-style-type: decimal;
+}
+.underlinedanchor{
+    color: #3D5A23;
+    text-decoration: underline;
+}
+.lighterp{
+    color: #3D5A23;
+}
+/* PURE FLAVE PAGE----------- */
+#pureflavemain{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pureflavemain h2{
+    margin-top: 0;
+    font-size: 2.5em;
+}
+#pureflavemain section{
+    width: 500px;
+}
+#pureflavemain img{
+    margin-left: -50px;
+}
+#pureflaveshop{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #3D5A23;
+    border: #3D5A23 1px solid;
+    border-radius: 40px;
+    padding: 15px 60px;
+    font-size: 15px;
+}
+#pureflaveshop:hover{
+    background-color: white;
+    color: #3D5A23;
+}
+/* ABOUT US PAGE ----------- */
+#aboutusmain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 200px;
+}
+#aboutusmain section{
+    width: 460px;
+}
+#aboutus1{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+#aboutus2{
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+/* CONTACT PAGE------------- */
+#contactmain{
+    display: flex;
+}
+#contactmain section{
+    max-width: 450px;
+}
+#otherways{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#otherways article{
+    max-width: 250px;
+}
+#contactmain form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    padding-top: 70px;
+    padding-left: 50px;
+    gap: 50px;
+    justify-content: end;
+}
+#firstname, #lastname{
+    width: 160px;
+}
+#email{
+    width: 395px;
+}
+#message{
+    width: 395px;
+}
+.inputstyle{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #F9F9F8;
+    font-size: 16px;
+    font-family: 'Objectivity-Regular';
+    padding: 20px 10px;
+    border-bottom: #3F5D27 1px solid;
+}
+.inputstyle:focus{
+    outline: none;
+    border-bottom: #3F5D27 2px solid;
+}
+.inputstyle:hover{
+    border-bottom: #3F5D27 2px solid;
+}
+#submit{
+    color: #3F5D27;
+    text-decoration: none;
+    background-color: #E2E2F2;
+    border: #3F5D27 1px solid;
+    border-radius: 40px;
+    padding: 15px 60px;
+    font-size: 18px;
+}
+#submit:hover{
+    background-color: #F9F9F8;
+    color: #3F5D27;
+}
+#contactmain label{
+    color: #3F5D27;
+}
+/* SHOP--------------------- */
+p{
+    max-width: 500px;
+}
+.shopsection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shopsection img{
+    width: 300px;
+}
+.shopsection article{
+    padding: 0px 10px;
+}
+.shopsection article p{
+    color: black;
+    margin: 10px 0px;
+}
+.shopsection article h3{
+    margin: 10px 0px;
+    font-family: 'Objectivity-Regular';
+}
+#tagnew{
+    background-color: #3D5A23;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    padding-top: 3px;
+    position: relative;
+    top: 38px;
+}
+#gingeratshop{
+    position: relative;
+    top: -48px;
+}
+/* DEMO-MODE----------- */
+#demomode{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+#demomode h2, #demomode p{
+    color: #1E2B11;
+}
+#demomode a{
+    color: white;
+    background-color: #3F5D27;
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: 200px;
+    margin-left: 70px;
+}
+
+/* PRODUCT PAGE------- */
+#mainnav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0px 20px;
+    font-size: 16px;
+}
+#mainnav ul{
+    display: flex;
+    align-items: center;
+}
+#mainnav li{
+    margin: 5px;
+}
+.actualpage{
+    color: #767D6D;
+}
+.producticon{
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+}
+#productsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+#productsection section:first-child{
+    max-width: 500px;
+}
+#productinfo{
+    margin-top: -10px;
+    margin-left: 30px;
+    color: black;
+}
+#productinfo label{
+    font-size: 14px;
+}
+.quantitydiv{
+    margin-top: -15px;
+    margin-bottom: 80px;
+}
+.productquantity{  
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    font-size: 14px;
+    font-family: 'Objectivity-Regular';
+    padding: 12px 20px;
+    margin: 10px 0px;
+    margin-bottom: 30px;
+    border: silver 1px solid;
+}
+.priceoptions{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: -50px;
+}
+.optionbox{
+    background: white;
+    border: 1px silver solid;
+    padding: 15px;
+    margin-top: -90px;
+    margin-bottom: -40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+#onetimepurchase{
+    position: relative;
+    left: -130px;
+}
+.optionbox span{
+    position: relative;
+    left: -100px;
+}
+.optionbox p{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.optionbox:hover{
+    border: black 1px solid;
+}
+.optionbox input{
+    accent-color: black;
+}
+#addtocart{
+    background-color: #3D5A23;
+    padding: 15px 130px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Objectivity-Regular';
+}
+#addtocart:hover{
+    background-color: #758963;
+}
+#productinfo article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-top: 40px;
+    color: #1E2B11;
+}
+#productinfo p{
+    font-weight: bold;
+} 
+.productinfotitle{
+    color: #3F5D27;
+
+}
+.productinfodetails{
+    margin-top: -10px;
+    padding-bottom: 30px;
+    margin-bottom: -40px;
+    border-bottom: #3F5D27 1px solid;
+}
+#productinfodetails{
+    margin-top: -10px;
+    padding-bottom: 100px;
+    margin-bottom: -40px;
+}
+small{
+    font-size: 12px;
+    font-weight: normal;
+}
+/* FAQ------------------- */
+.magnifyingicon{
+    position: relative;
+    left: 67vw;
+}
+.faqsection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 13px;
+    color: #3F5D27;
+    gap: 30px;
+}
+.faqarticle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: -50px;
+}
+.faqarticle h2{
+    font-size: 32px;
+    margin-left: 30px;
+    background-color: #F3E8DC;
+    width: 120px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faqarticle h3{
+    margin-top: 30px;
+    width: 60vw;
+    height: 110px;
+    background-color: #F7F3EE;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* MEDIA QUERY--------------- */
+@media only screen and (max-width: 768px) {
+    header{
+        font-size: 12px;
+    }
+    #uppernav{
+        padding: 14px 0px 0px 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #uppernav ul{
+        margin-bottom: 10px;
+    }
+    #uppernav h1{
+        font-size: 20px;
+    }
+    #menuicon{
+        display: flex;
+        width: 30px;
+    }
+    .mobilemenu{
+        display: none;
+    }
+    #downernav{
+        font-size: 15px;
+        display: block;
+        padding-left: 15px;
+    }
+    #downernav ul{
+        padding-bottom: 20px;
+    }
+    main{
+        padding-left: 0;
+        margin-left: 20px;
+        font-size: 1em;
+        margin-top: 50px;
+        padding-bottom: 70px;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .borderdownp{
+        width: 90vw;
+    }
+    .producticon{
+        display: none;
+    }
+    #pureflavemain{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    #pureflavemain img{
+        width: 80vw;
+        margin: 0;
+    }
+    #pureflavemain p{
+        font-size: 1.3em;
+    }
+    #pureflaveshop{
+        padding: 16px 120px;
+    }
+    /* MOBILE MENU------- */
+    .mobilemenubody{
+        background-color: #E2E2F2;
+    }
+    .mobilemenuheader{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 15vw;
+        margin-bottom: 0;
+        background-color: #E2E2F2;
+    }
+    .mobilemenumain{
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3em;
+    }
+    .mobilemenumain li{
+        line-height: 50px;
+        color: #3D5A23;
+    }   
+    #uppernavbutton{
+        background-color: #E2E2F2;
+    }  
+    .shopsection img{
+        width: 85vw;
+    }   
+}

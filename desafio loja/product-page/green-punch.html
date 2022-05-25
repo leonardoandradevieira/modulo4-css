@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pure flave</title>
+    <link rel="stylesheet" href="../CSS/reset.css"/>
+    <link rel="stylesheet" href="../CSS/stylesheet.css"/>
+    <style>
+        @font-face {
+            font-family: 'Syne-Bold';
+            src:url('../Fonts/Syne-Bold.ttf.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Objectivity-Regular';
+            src:url('../Fonts/Objectivity-Regular.ttf.woff') format('woff'); 
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <strong>FREE SHIPPING ON ORDERS OVER $75</strong>
+    </header>
+
+    <nav id="uppernav">
+        <ul>
+            <li id="home">
+                <a href="../pure-flave.html"><h1>pure flave</h1></a>
+            </li>
+            <li class="mobilemenu">
+                <a href="../shop.html" class="ahover">Shop</a>
+            </li>
+            <li class="mobilemenu">
+                <a href="../subscribe.html" class="ahover">Subscription</a>
+            </li>
+            <li class="mobilemenu">
+                <a href="../about-us.html" class="ahover">About Us</a>
+            </li>
+            <li class="mobilemenu">
+                <a href="../contact.html" class="ahover">Contact</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="mobilemenu">
+                <a href="../demo-mode.html" id="uppernavbutton">
+                    <img id="profile" src="/Images/icon_login.svg" alt="profile icon">
+                    <span> Log In</span>
+                </a>
+            </li>
+            <li>
+                <a href="../cart-page.html">
+                    <img id="cart" src="/Images/icon_cart.svg" alt="cart icon">
+                    <span id="cartcounter">0</span>
+                </a>
+            </li>
+            <li>
+                <a href="../mobilemenu.html">
+                    <img id="menuicon" src="/Images/icon_menu.svg" alt="menu icon">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <nav id="mainnav">
+            <ul>
+                <li>
+                    <a href="../pure-flave.html">Home</a>
+                </li>/
+                <li>
+                    <a href="../shop.html" class="ahover">Shop</a>
+                </li>/
+                <li>
+                    <span class="actualpage">Green Punch</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="actualpage">&lsaquo; Prev</span>
+                </li>
+                |
+                <li>
+                    <a href="/product-page/apple-citrus.html" class="ahover">Next &rsaquo;</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="productsection">
+
+            <section>
+                <a href="../Images/green_punch1.webp">
+                    <img src="../Images/green_punch1.webp" alt="big image green punch juice 1"/>
+                </a>
+                <img class="producticon" src="../Images/green_punch1.webp" alt="small icon green punch juice 1"/>
+                <a href="../product-page/green-punch-2.html"><img class="producticon" src="../Images/green_punch2.webp" alt="small icon green punch juice 2"/></a>
+            </section>
+
+            <section id="productinfo">
+                <h2>Green Punch</h2>
+                <small>SKU: 0001</small>
+                <p>$6.00</p>
+                <label>Quantity</label><br>
+                <input class="productquantity" type="number" value="1" min="1" max="999"><br>
+                <a id="addtocart" href="../addtocart.html">Add to Cart</a>
+                <article>
+                    <p class="productinfotitle">PRODUCT INFO</p>
+                    <p>-</p>
+                    <p class="productinfodetails">I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item.</p>
+                </article>
+                <article>
+                    <p class="productinfotitle">RETURN & REFUND POLICY</p>
+                    <p>-</p>
+                    <p class="productinfodetails">I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.</p>
+                </article>
+                <article>
+                    <p class="productinfotitle">SHIPPING INFO</p>
+                    <p>-</p>
+                    <p id="productinfodetails">I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.</p>
+                </article>
+            </section>
+
+        </section>
+
+    </main>
+
+    <aside>
+        <a href="../chat.html">
+            <img id="chat" src="/Images/icon_message.svg">
+        </a>
+    </aside>
+
+    <nav id="downernav">
+        <ul class="downerul">
+            <li><a href="../terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="../refundpolicy.html">Refund Policy</a></li>
+        </ul>
+        <ul class="downerul">
+            <li><a href="../cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../terms-conditions.html">Payment Methods</a></li>
+        </ul>
+        <ul class="downerul">
+            <li>Adress:</li>
+            <li>500 Terry Francois St.</li>
+            <li>San Francisco, CA 94158</li>
+        </ul>
+        <ul class="downerul">
+            <li>Contact:</li>
+            <li><a id="mailto" href="mailto:info@mysite.com">info@mysite.com</a></li>
+            <li>123-456-7890</li>
+            <li id="socialmedia">
+                <a href="https://www.facebook.com/wix">
+                        <img id="facebookicon" src="/Images/icon_f.svg" alt="facebook icon">
+                </a>
+                <a href="https://www.instagram.com/wix">
+                        <img id="instagramicon" src="/Images/icon_insta.svg" alt="instagram icon">
+                </a>
+                <a href="https://www.twitter.com/wix">
+                        <img id="twittericon" src="/Images/icon_twitter.svg" alt="twitter icon">
+                </a>
+                <a href="https://www.tiktok.com/@wix">
+                        <img id="tiktokicon" src="/Images/icon_tiktok.svg" alt="tiktok icon">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer>
+        © 2023 by Pure Flave. Proudly created with <a href="https://wix.com/?utm_campaign=vir_created_with">Wix.com</a>
+    </footer>
+</body>
+</html>
