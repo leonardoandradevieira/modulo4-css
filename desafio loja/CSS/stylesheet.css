@@ -48,7 +48,12 @@ header{
     font-weight: bolder;
     text-align: center;
     font-size: 10px;
-    padding: 10px;
+    padding-top: 10px;
+}
+header strong{
+    font-family: 'Objectivity-Regular';
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 footer{
     color: #3F5D27;
@@ -65,25 +70,27 @@ footer a{
 }
 
 /* UPPERNAV--------------------- */
-#uppernav{
-    padding: 24px 100px;
+#upper-nav{
+    background-color: #F9F9F9;
     font-size: 16px;
     font-weight: bold;
-    border-bottom: #3F5D27 1px solid;
+    border-top: #3F5D27 1px solid;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10px;
+    padding: 20px 0px;
 }
-#uppernav h1{
+#upper-nav h1{
     font-size: 25px;
 }
-#uppernav ul{
+#upper-nav ul{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-#uppernav ul:first-child{
+#upper-nav ul:first-child{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -97,7 +104,7 @@ footer a{
 #profile{
     width: 20px;
 }
-#uppernavbutton{
+#upper-nav-button{
     color: #1E2B11;
     text-decoration: none;
     background-color: #F9F9F9;
@@ -109,29 +116,29 @@ footer a{
     padding: 10px;
     font-size: 15px;
 }
-#uppernavbutton:hover{
+#upper-nav-button:hover{
     color: #3D5A23;
 }
-a.ahover:hover{
+.a-hover:hover{
     color: #3D5A23;
 }
 #cart{
     width: 25px;
     padding-left: 0px;
 }
-#cartcounter{
+#cart-counter{
     font-size: 12px;
     color: #3D5A23;
     position: relative;
     top: -5px;
     left: -20px;
 }
-#menuicon{
+#menu-icon{
     display: none;
 }
 
 /* DOWNERNAV--------------------- */
-#downernav{
+#downer-nav{
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 14px;
@@ -141,19 +148,19 @@ a.ahover:hover{
     align-items: top;
     justify-content: space-evenly;
 }
-.downerul li{
+.downer-ul li{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#mailto{
+#mail-to{
     color: currentColor;
     text-decoration: none;
 }
-#socialmedia{
+#social-media{
     text-decoration: none;
     display: flex;
 }
-#socialmedia img{
+#social-media img{
     width: 20px;
     padding: 8px;
 }
@@ -176,26 +183,26 @@ aside{
 }
 
 /* MAIN---------------------- */
-.borderdownp{
+.border-down-p{
     padding-bottom: 50px;
     border-bottom: 1px solid #1E2B11;
     max-width: 700px;
 }
-.disclist{
+.disc-list{
     list-style-type: disc;
 }
-.numberlist{
+.number-list{
     list-style-type: decimal;
 }
-.underlinedanchor{
+.underlined-anchor{
     color: #3D5A23;
     text-decoration: underline;
 }
-.lighterp{
+.lighter-p{
     color: #3D5A23;
 }
 /* PURE FLAVE PAGE----------- */
-#pureflavemain{
+#pure-flave-main{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -203,17 +210,17 @@ aside{
     margin-top: 0;
     margin-bottom: 0;
 }
-#pureflavemain h2{
+#pure-flave-main h2{
     margin-top: 0;
     font-size: 2.5em;
 }
-#pureflavemain section{
+#pure-flave-main section{
     width: 500px;
 }
-#pureflavemain img{
+#pure-flave-main img{
     margin-left: -50px;
 }
-#pureflaveshop{
+#pure-flave-shop{
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -223,47 +230,47 @@ aside{
     padding: 15px 60px;
     font-size: 15px;
 }
-#pureflaveshop:hover{
+#pure-flave-shop:hover{
     background-color: white;
     color: #3D5A23;
 }
 /* ABOUT US PAGE ----------- */
-#aboutusmain{
+#about-us-main{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 0;
     margin-bottom: 200px;
 }
-#aboutusmain section{
+#about-us-main section{
     width: 460px;
 }
-#aboutus1{
+#about-us-1{
     position: absolute;
     top: 200px;
     left: 800px;
 }
-#aboutus2{
+#about-us-2{
     position: absolute;
     top: 300px;
     left: 650px;
 }
 /* CONTACT PAGE------------- */
-#contactmain{
+#contact-main{
     display: flex;
 }
-#contactmain section{
+#contact-main section{
     max-width: 450px;
 }
-#otherways{
+#other-ways{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#otherways article{
+#other-ways article{
     max-width: 250px;
 }
-#contactmain form{
+#contact-main form{
     display: flex;
     flex-wrap: wrap;
     width: 450px;
@@ -272,7 +279,7 @@ aside{
     gap: 50px;
     justify-content: end;
 }
-#firstname, #lastname{
+#first-name, #last-name{
     width: 160px;
 }
 #email{
@@ -281,7 +288,7 @@ aside{
 #message{
     width: 395px;
 }
-.inputstyle{
+.input-style{
     border: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -293,11 +300,11 @@ aside{
     padding: 20px 10px;
     border-bottom: #3F5D27 1px solid;
 }
-.inputstyle:focus{
+.input-style:focus{
     outline: none;
     border-bottom: #3F5D27 2px solid;
 }
-.inputstyle:hover{
+.input-style:hover{
     border-bottom: #3F5D27 2px solid;
 }
 #submit{
@@ -313,32 +320,32 @@ aside{
     background-color: #F9F9F8;
     color: #3F5D27;
 }
-#contactmain label{
+#contact-main label{
     color: #3F5D27;
 }
 /* SHOP--------------------- */
 p{
     max-width: 500px;
 }
-.shopsection{
+.shop-section{
     display: flex;
     flex-wrap: wrap;
 }
-.shopsection img{
+.shop-section img{
     width: 300px;
 }
-.shopsection article{
+.shop-section article{
     padding: 0px 10px;
 }
-.shopsection article p{
+.shop-section article p{
     color: black;
     margin: 10px 0px;
 }
-.shopsection article h3{
+.shop-section article h3{
     margin: 10px 0px;
     font-family: 'Objectivity-Regular';
 }
-#tagnew{
+#tag-new{
     background-color: #3D5A23;
     color: white;
     text-align: center;
@@ -349,12 +356,12 @@ p{
     position: relative;
     top: 38px;
 }
-#gingeratshop{
+#ginger-at-shop{
     position: relative;
     top: -48px;
 }
 /* DEMO-MODE----------- */
-#demomode{
+#demo-mode{
     width: 100vw;
     height: 100vh;
     display:grid;
@@ -362,10 +369,10 @@ p{
     justify-content: center;
     align-content: center;
 }
-#demomode h2, #demomode p{
+#demo-mode h2, #demo-mode p{
     color: #1E2B11;
 }
-#demomode a{
+#demo-mode a{
     color: white;
     background-color: #3F5D27;
     display:grid;
@@ -378,50 +385,50 @@ p{
 }
 
 /* PRODUCT PAGE------- */
-#mainnav{
+#main-nav{
     display: flex;
     justify-content: space-between;
     max-width: 900px;
     margin: 0px 20px;
     font-size: 16px;
 }
-#mainnav ul{
+#main-nav ul{
     display: flex;
     align-items: center;
 }
-#mainnav li{
+#main-nav li{
     margin: 5px;
 }
-.actualpage{
+.actual-page{
     color: #767D6D;
 }
-.producticon{
+.product-icon{
     height: 40px;
     width: 40px;
     margin: 2px;
 }
-#productsection{
+#product-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 50px 20px;
 }
-#productsection section:first-child{
+#product-section section:first-child{
     max-width: 500px;
 }
-#productinfo{
+#product-info{
     margin-top: -10px;
     margin-left: 30px;
     color: black;
 }
-#productinfo label{
+#product-info label{
     font-size: 14px;
 }
-.quantitydiv{
+.quantity-div{
     margin-top: -15px;
     margin-bottom: 80px;
 }
-.productquantity{  
+.product-quantity{  
     border: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -435,13 +442,13 @@ p{
     margin-bottom: 30px;
     border: silver 1px solid;
 }
-.priceoptions{
+.price-options{
     font-size: 14px;
     font-weight: lighter;
     margin-top: 0px;
     margin-bottom: -50px;
 }
-.optionbox{
+.option-box{
     background: white;
     border: 1px silver solid;
     padding: 15px;
@@ -451,26 +458,26 @@ p{
     display: flex;
     align-items: center;
 }
-#onetimepurchase{
+#one-time-purchase{
     position: relative;
     left: -130px;
 }
-.optionbox span{
+.option-box span{
     position: relative;
     left: -100px;
 }
-.optionbox p{
+.option-box p{
     margin: 0;
     padding: 0;
     line-height: 20px;
 }
-.optionbox:hover{
+.option-box:hover{
     border: black 1px solid;
 }
-.optionbox input{
+.option-box input{
     accent-color: black;
 }
-#addtocart{
+#add-to-cart{
     background-color: #3D5A23;
     padding: 15px 130px;
     border-radius: 30px;
@@ -479,10 +486,10 @@ p{
     font-size: 20px;
     font-family: 'Objectivity-Regular';
 }
-#addtocart:hover{
+#add-to-cart:hover{
     background-color: #758963;
 }
-#productinfo article{
+#product-info article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -490,20 +497,20 @@ p{
     margin-top: 40px;
     color: #1E2B11;
 }
-#productinfo p{
+#product-info p{
     font-weight: bold;
 } 
-.productinfotitle{
+.product-info-title{
     color: #3F5D27;
 
 }
-.productinfodetails{
+.product-info-details{
     margin-top: -10px;
     padding-bottom: 30px;
     margin-bottom: -40px;
     border-bottom: #3F5D27 1px solid;
 }
-#productinfodetails{
+#product-info-details{
     margin-top: -10px;
     padding-bottom: 100px;
     margin-bottom: -40px;
@@ -513,11 +520,11 @@ small{
     font-weight: normal;
 }
 /* FAQ------------------- */
-.magnifyingicon{
+.magnifying-icon{
     position: relative;
     left: 67vw;
 }
-.faqsection{
+.faq-section{
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -526,13 +533,13 @@ small{
     color: #3F5D27;
     gap: 30px;
 }
-.faqarticle{
+.faq-article{
     display: flex;
     align-items: center;
     justify-content: left;
     margin-top: -50px;
 }
-.faqarticle h2{
+.faq-article h2{
     font-size: 32px;
     margin-left: 30px;
     background-color: #F3E8DC;
@@ -542,7 +549,7 @@ small{
     align-items: center;
     justify-content: center;
 }
-.faqarticle h3{
+.faq-article h3{
     margin-top: 30px;
     width: 60vw;
     height: 110px;
@@ -561,30 +568,30 @@ small{
     header{
         font-size: 12px;
     }
-    #uppernav{
+    #upper-nav{
         padding: 14px 0px 0px 24px;
         display: flex;
         justify-content: space-between;
     }
-    #uppernav ul{
+    #upper-nav ul{
         margin-bottom: 10px;
     }
-    #uppernav h1{
+    #upper-nav h1{
         font-size: 20px;
     }
-    #menuicon{
+    #menu-icon{
         display: flex;
         width: 30px;
     }
-    .mobilemenu{
+    .mobile-menu{
         display: none;
     }
-    #downernav{
+    #downer-nav{
         font-size: 15px;
         display: block;
         padding-left: 15px;
     }
-    #downernav ul{
+    #downer-nav ul{
         padding-bottom: 20px;
     }
     main{
@@ -597,34 +604,34 @@ small{
     h2{
         font-size: 1.5em;
     }
-    .borderdownp{
+    .border-down-p{
         width: 90vw;
     }
-    .producticon{
+    .product-icon{
         display: none;
     }
-    #pureflavemain{
+    #pure-flave-main{
         display: flex;
         flex-wrap: wrap-reverse;
         align-items: center;
         justify-content: center;
         font-size: 0.8em;
     }
-    #pureflavemain img{
+    #pure-flave-main img{
         width: 80vw;
         margin: 0;
     }
-    #pureflavemain p{
+    #pure-flave-main p{
         font-size: 1.3em;
     }
-    #pureflaveshop{
+    #pure-flave-shop{
         padding: 16px 120px;
     }
     /* MOBILE MENU------- */
-    .mobilemenubody{
+    .mobile-menu-body{
         background-color: #E2E2F2;
     }
-    .mobilemenuheader{
+    .mobile-menu-header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -632,20 +639,20 @@ small{
         margin-bottom: 0;
         background-color: #E2E2F2;
     }
-    .mobilemenumain{
+    .mobile-menu-main{
         margin-top: -20px;
         display: flex;
         flex-direction: column;
         font-size: 1.3em;
     }
-    .mobilemenumain li{
+    .mobile-menu-main li{
         line-height: 50px;
         color: #3D5A23;
     }   
-    #uppernavbutton{
+    #upper-nav-button{
         background-color: #E2E2F2;
     }  
-    .shopsection img{
+    .shop-section img{
         width: 85vw;
     }   
 }
