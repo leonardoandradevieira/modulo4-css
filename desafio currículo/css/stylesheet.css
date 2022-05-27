@@ -323,7 +323,7 @@ li{
 #contateme{
     color: white;
     padding: 5vw;
-    background-image: url('/Imagens/foto (2).jpg');
+    background-image: url('../Imagens/foto (2).jpg');
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: 100%;
