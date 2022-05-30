@@ -1,0 +1,107 @@
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
+    }
+    header{
+        padding: 18px;
+        position: relative;
+        width: 100vw;
+    }
+    nav{
+        display: none;
+    }
+    #menu-icon{
+        display: flex;
+        width: 20px;
+        opacity: 1;
+        border: 1px solid white;
+        padding: 6px;
+        margin-left: 75vw;
+    }
+    /* HOME---- */
+    #home{
+        height: 500px;
+        width: 111vw;
+    }
+    #home h1{
+        font-size: 130px;
+    }
+    /* ABOUT---- */
+    #about{
+        height: 450px;
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        width: 111vw;
+    }
+    #about div{
+        height: 490px;
+        width: 111vw;
+    }
+    #about p{
+        padding: 0px 10px;
+        margin: 0;
+    }
+    /* FLAVORS---- */
+    #flavors{
+        width: 97vw;
+    }
+    #flavors div{
+        width: 200px;
+    }
+    /* COOKER---- */
+    #cooker{
+        height: 800px;
+        width: 109vw;
+        flex-wrap: wrap;
+    }
+    #cooker div{
+        height: 800px;
+    }
+    #cooker img{
+        padding: 0px;
+        margin: 0;
+        width: 300px;
+        z-index: 1;
+    }
+    #cooker h2{
+        margin: 0;
+    }
+    #cooker article{
+        padding-top: 20px;
+    }
+    /* GALLERY----- */
+    .carousel{
+        width: 110vw;
+        height: 300px;
+    }
+    /* CONTACT---- */
+    #contact{
+        padding: 40px;
+        width: 100vw;
+    }
+    #contact section{
+        margin: 0;
+    }
+    #contact form{
+        padding: 40px;
+        width: 100vw;
+    }
+    input{
+        width: 90vw;
+    }
+    textarea{
+        width: 90vw;
+    }
+    button{
+        margin-left: 50vw;
+    }
+    /* FOOTER--- */
+    footer{
+        padding: 10px;
+        width: 106vw;
+    }
+}

@@ -1,0 +1,311 @@
+h1{
+    font-family: 'Syky';
+    font-weight: normal;
+    font-style: italic;
+    font-size: 180px;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/* HEADER------------------------------------ */
+header{
+    position: fixed;
+    background-color: #362E26;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    z-index: 2;
+}
+nav{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+nav a:hover{
+    color: #dad2ca;
+}
+#menu-icon{
+    display: none;
+}
+
+/* HOME------------------------- */
+#home{
+    color: white;
+    height: 734px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home p{
+    font-family: sans-serif;
+    font-size: 24px;
+    letter-spacing: 7px;
+    padding-bottom: 15px;
+}
+#home img{
+    width: 140px;
+}
+
+/* ABOUT---------------- */
+#about{
+    background-color: #E78585;
+    height: 460px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+#about div{
+    background-image: url('/Images/background2.png');
+    opacity: 0.5;
+    height: 460px;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+}
+#about h2{
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+}
+#about p{
+    margin-left: 100px;
+    max-width: 600px;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 22x;
+    z-index: 1;
+}
+
+/* FLAVORS----------- */
+#flavors{
+    min-height: 400px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 10vw;
+}
+#flavors p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22x;
+    max-width: 750px;
+}
+#under{
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#flavors div{
+    padding-top: 50px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.brigadeiro{
+    width: 200px;
+}
+/* COOKER---------- */
+#cooker{
+    background-color: #70BABE;
+    height: 660px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: -1;
+}
+#cooker div{
+    background-image: url('/Images/background1.png');
+    opacity: 0.5;
+    height: 660px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+#cooker article{
+    z-index: 1;
+    padding-top: 160px;
+}
+#cooker h2{
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+#cooker p{
+    max-width: 400px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 22x;
+    padding-bottom: 20px;
+}
+#cooker img{
+    padding-top: 100px;
+    padding-left: 70px;
+    width: 450px;
+    z-index: 1;
+}
+/* GALLERY--------------- */
+.carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+} 
+.slides3{
+    align-self: center;
+}
+.slides {
+    display: flex;
+    height: 460px;
+    scroll-behavior: smooth;
+}
+.slides-item {
+    display: flex;
+    height: 460px;
+}
+.slider-nav {
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+}
+/* CONTACT-------- */
+#contact{
+    background-color: #362E26;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 90px 0px;
+}
+#contact > section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 240px;
+    margin-right: 100px;
+}
+#contact h2{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    line-height: 28px;
+}
+#contact p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding-bottom: 40px;
+}
+#links{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+input{
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    background-color: #514539;
+    border: #362E26 1px solid;
+    border: none;
+    height: 25px;
+    margin: 6px;
+}
+input::placeholder{
+    color: white;
+    font-size: 16px;
+    padding: 20px 30px;
+    text-align: left;
+    vertical-align: center;
+}
+input::-webkit-input-placeholder {
+    text-align: left;
+    vertical-align: center;
+}
+textarea{
+    width: 475px;
+    margin: 0px 6px;
+    background-color: #514539;
+    border: #362E26 1px solid;
+    border: none;
+}
+textarea::placeholder{
+    color: white;
+    font-size: 16px;
+    padding: 5px 30px;
+}
+input:hover, textarea:hover{
+    border: none;
+    border: white 1px solid;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: solid 1px white;
+}
+input:active, textarea:active{
+    outline: none;
+    border: solid 1px white;
+}
+button{
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    width: 90px;
+    margin: 6px;
+    margin-left: 395px;
+    background: linear-gradient(#8b7e73 50%, #675749 50%);
+    border: none;
+}
+button:hover{
+    background: linear-gradient(#a59c94 50%, #897e75 50%);;
+}
+
+/* FOOTER-------------- */
+footer{
+    color: #877c72;
+    background-color: #362E26;
+    border-top: 2px solid #6e645b;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+footer a{
+    color: currentColor;
+}
