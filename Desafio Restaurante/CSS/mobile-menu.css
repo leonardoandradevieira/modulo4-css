@@ -1,0 +1,28 @@
+/* HEADER------------------------------------ */
+header{
+    background-color: #362E26;
+    width: 100vw;
+    height: 100vh;
+}
+#menu-icon{
+    padding: 20px;
+    width: 30px;
+    position: relative;
+    left: 80vw;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+nav a:hover{
+    color: #dad2ca;
+}
